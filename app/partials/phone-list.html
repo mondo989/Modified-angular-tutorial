@@ -1,17 +1,36 @@
 <div class="container-fluid">
   <div class="row">
-    <div class="col-md-2">
+    <div class="holder">
+    <h1>Explore your future Phone</h1>
+    </div>
+    <div class="col-md-3 ">
+      <div class="left-box-fixed">
       <!--Sidebar content-->
+          <h3>Search:</h3> <input ng-model="query">
+          <hr>
+          <p class="sort-font">Sort by:</p>
+          <select ng-model="orderProp">
+            <option value="name">Alphabetical</option>
+            <option value="age">Newest</option>
+          </select>
+        </div>
+    
+      <div class="left-box">
+      <!--Sidebar content-->
+          <h3>Search:</h3> <input ng-model="query">
+          <hr>
+          <p class="sort-font">Sort by:</p>
+          <select ng-model="orderProp">
+            <option value="name">Alphabetical</option>
+            <option value="age">Newest</option>
+          </select>
+        </div>
 
-      Search: <input ng-model="query">
-      Sort by:
-      <select ng-model="orderProp">
-        <option value="name">Alphabetical</option>
-        <option value="age">Newest</option>
-      </select>
 
     </div>
-    <div class="col-md-10">
+
+    <div class="col-md-1"></div>
+    <div class="col-md-8">
       <!--Body content-->
 
       <ul class="phones">
