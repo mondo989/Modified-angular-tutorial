@@ -1,12 +1,28 @@
+
+<div class="top-header-row">
+      <div class="row">
+        <span class="pull-left nav-box">
+          Hie
+        </span>
+            <span class="pull-right nav-box">
+              Hie
+            </span>
+              <span class="pull-right nav-box">
+              Hie
+            </span>
+      </div>
+</div>
+
 <div class="container-fluid">
   <div class="row">
     <div class="holder">
-    <h1>Explore your future Phone</h1>
+    <h1>Choose a Phone</h1>
+    <hr>
     </div>
     <div class="col-md-3 ">
-      <div class="left-box-fixed">
+      <div class="left-box-fixed left-box-style">
       <!--Sidebar content-->
-          <h3>Search:</h3> <input ng-model="query">
+          <h3>Search:</h3> <input class="button" ng-model="query">
           <hr>
           <p class="sort-font">Sort by:</p>
           <select ng-model="orderProp">
@@ -15,7 +31,7 @@
           </select>
         </div>
     
-      <div class="left-box">
+      <div class="left-box left-box-style">
       <!--Sidebar content-->
           <h3>Search:</h3> <input ng-model="query">
           <hr>
@@ -25,14 +41,11 @@
             <option value="age">Newest</option>
           </select>
         </div>
-
-
     </div>
 
     <div class="col-md-1"></div>
-    <div class="col-md-8">
+        <div class="col-md-8 overflow">
       <!--Body content-->
-
       <ul class="phones">
         <li ng-repeat="phone in phones | filter:query | orderBy:orderProp"
             class="thumbnail phone-listing">
@@ -43,5 +56,11 @@
       </ul>
 
     </div>
+
+ <div class="bottom-main-row">
+  
+  </row>
+
+
   </div>
 </div>
