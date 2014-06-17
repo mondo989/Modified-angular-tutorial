@@ -4,7 +4,7 @@
         <span class="pull-left nav-box">
           Hie
         </span>
-            <span class="pull-right nav-box">
+            <span class="pull-left nav-box">
               Hie
             </span>
               <span class="pull-right nav-box">
@@ -16,20 +16,32 @@
 <div class="container-fluid">
   <div class="row">
     <div class="holder">
-    <h1>Choose a Phone</h1>
+    <h1>Choose a Free Phone</h1>
     <hr>
     </div>
     <div class="col-md-3 ">
       <div class="left-box-fixed left-box-style">
       <!--Sidebar content-->
-          <h3>Search:</h3> <input class="button" ng-model="query">
+          <h3>Search by keywords:</h3> <input class="button" ng-model="query">
           <hr>
           <p class="sort-font">Sort by:</p>
           <select ng-model="orderProp">
             <option value="name">Alphabetical</option>
             <option value="age">Newest</option>
+
+    <br><hr>
           </select>
-        </div>
+
+          <hr>
+           <input type="checkbox"
+       ng-model="orderProp"
+       [name="New Box"]
+       [ng-true-value=""]
+       [ng-false-value=""]
+       [ng-change=""]> This is a checkbox
+    </input>
+       
+       </div>
     
       <div class="left-box left-box-style">
       <!--Sidebar content-->
